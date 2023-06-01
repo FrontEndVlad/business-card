@@ -1,0 +1,115 @@
+@keyframes ButtonHover {
+    0% {opacity: 0.4; box-shadow: 0px 0px 9px #e7bc91; border-radius: 0px;}
+    25% {opacity: 0.6; box-shadow: 1px 1px 4px #e7bc91; border-radius: 8px;}
+    50% {opacity: 0.8; box-shadow: 2px 2px 5px #e7bc91; border-radius: 12px;}
+    100% {opacity: 1; box-shadow: 5px 5px 9px #e7bc91; border-radius: 20px;}
+}
+
+@keyframes Rounding {
+    0% {border-radius: 0px}
+    25% {border-radius: 25px}
+    50% {border-radius: 50px}
+    75% {border-radius: 75px}
+    100% {border-radius: 100px}
+}
+
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 22px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    text-align: center;
+    background: #f3d5b5;
+    color: #2b2839;
+    border-color: #ffedd8;
+    border-style: outset;
+    border-bottom: 6px solid #8b5e34;
+    border-radius: 12px;
+    text-shadow: 4px 4px 7px #9d6b53;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.avatar {
+    width: 150px;
+    box-shadow: 5px 5px 9px #9d6b53;
+}
+
+.avatar:hover {
+    width: 150px;
+    box-shadow: 5px 5px 9px #9d6b53;
+    animation-name: Rounding;
+    Animation-duration: 1s;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.linkedIn-button {
+    width: 200px;
+    padding: 5px;
+    display: block;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid white;
+    opacity: 0.4;
+}
+
+.linkedIn-button:hover {
+    width: 200px;
+    padding: 5px;
+    display: block;
+    margin: 20px auto;
+    background: white;
+    border: 1px groove #8b5e34;
+    border-radius: 100px;
+    opacity: 1;
+    box-shadow: 5px 5px 9px #e7bc91;
+    animation-name: ButtonHover;
+    Animation-duration: 0.5s;
+}
+
+a:link {
+    text-decoration: none;
+    color: #e7bc91;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #e7bc91;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
